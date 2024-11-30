@@ -1,0 +1,100 @@
+/* styles.css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f7fa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 800px;
+    width: 100%;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #007acc;
+    text-align: center;
+  }
+  
+  form fieldset {
+    margin-bottom: 15px;
+    border: 2px solid #007acc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #007acc;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #005999;
+  }
+  
+  .resume-output {
+    display: none;
+    margin-top: 20px;
+    background-color: #eef5ff;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .resume-output h2 {
+    color: #007acc;
+  }
+  
+  .resume-output img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  /* Print Styles */
+  @media print {
+    body * {
+      visibility: hidden;
+    }
+  
+    .resume-output, .resume-output * {
+      visibility: visible;
+    }
+  
+    .resume-output {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+  
